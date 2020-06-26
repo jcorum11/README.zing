@@ -1,0 +1,27 @@
+{
+  "name": "readme-zing",
+  "version": "1.0.0",
+  "description": "a CLI to dynamically create README.md files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcorum11/README.zing.git"
+  },
+  "keywords": [
+    "dynamic",
+    "create",
+    "README.md"
+  ],
+  "author": "Jake Corum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcorum11/README.zing/issues"
+  },
+  "homepage": "https://github.com/jcorum11/README.zing#readme",
+  "dependencies": {
+    "inquirer": "^7.2.0"
+  }
+}
