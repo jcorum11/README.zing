@@ -12,16 +12,22 @@ function generateMarkdown(data) {
   * [License](#license)
 
   ## Installation
+  ${data.installation}
 
   ## Usage
+  ${data.usage}
 
   ## License
-
+  ${data.mitLicense ? "MIT" : data.license}
   ## Contributing
+  ${data.contributing}
 
   ## Tests
+  ${data.tests}
 
   ## Questions
+  ${data.githubProfileLInk}
+  ${data.emailLink}
 `;
 }
 
