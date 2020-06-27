@@ -27,8 +27,56 @@ const init = () => {
         {
             type: "input",
             name: "title",
-            message: "Project title?"
-        }
+            message: "Project title:"
+        },
+        {
+            type: "input",
+            name: "description",
+            message: "Description of the project:"
+        },
+        {
+            type: "input",
+            name: "installation",
+            message: "Instructions for Installation:"
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "Instructions for Usage:"
+        },
+        {
+            type: "confirm",
+            name: "mitLicense",
+            message: "MIT License?", 
+            default: true,
+            //choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"]
+        },
+        {
+            type: "input", 
+            name: "license", 
+            message: "License Name:", 
+            when: ({ mitLicense }) => !mitLicense
+        },
+        {
+            type: "input",
+            name: "contributing",
+            message: "Instructions For Contributing:"
+        },
+        {
+            type: "input",
+            name: "tests",
+            message: "Type of Test:"
+        },
+        {
+            type: "input",
+            name: "githubProfileLink",
+            message: "Enter Your GitHub Profile Link:"
+        },
+        {
+            type: "input", 
+            name: "emailLink",
+            message: "Enter Your Email:"
+        }, 
     ])
 }
 
