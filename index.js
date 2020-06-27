@@ -22,6 +22,17 @@ const writeFile = fileContent => {
 
 // function to start program
 const init = () => {
+    // list of licenses
+    const licenseList = [
+        "GNU AGPLv3", 
+        "GNU GPLv3", 
+        "GNU LGPLv3", 
+        "Mozilla Public License 2.0", 
+        "Apache License 2.0", 
+        "MIT License", 
+        "Boost Software License 1.0", 
+        "The Unlicense"
+    ];
     // array of questions for user
     return inquirer.prompt([
         {
@@ -45,17 +56,10 @@ const init = () => {
             message: "Instructions for Usage:"
         },
         {
-            type: "confirm",
-            name: "mitLicense",
-            message: "MIT License?", 
-            default: true,
-            //choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"]
-        },
-        {
-            type: "input", 
-            name: "license", 
-            message: "License Name:", 
-            when: ({ mitLicense }) => !mitLicense
+            type: "list",
+            name: "license",
+            message: "License?", 
+            choices: licenseList
         },
         {
             type: "input",
@@ -77,8 +81,8 @@ const init = () => {
             name: "emailLink",
             message: "Enter Your Email:"
         }, 
-    ])
-}
+    ]);
+};
 
 //function call to initialize program
 init()
