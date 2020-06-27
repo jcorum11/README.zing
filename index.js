@@ -23,7 +23,7 @@ const writeFile = fileContent => {
 // function to start program
 const init = () => {
     // list of licenses
-    const licenseList = [
+    var licenseList = [
         "GNU AGPLv3", 
         "GNU GPLv3", 
         "GNU LGPLv3", 
@@ -83,6 +83,8 @@ const init = () => {
         }, 
     ]);
 };
+
+
 
 //function call to initialize program
 init()

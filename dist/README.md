@@ -1,5 +1,5 @@
 
-  # lakjsd;fljal;sdkfj
+  # ;alsdjf;alksdjf;lk
 
   ## Description
 
@@ -10,19 +10,20 @@
   * [License](#license)
 
   ## Installation
-  ;alskdjf;alskjdf;aljs
+  a;sldkfja;sldkjfa;slkdfj
 
   ## Usage
-  ja;slkdjf;askldjf;asdkjlf
+  as;dlkfja;sldkfja;sdlkjf
 
   ## License
-  MIT
+  [GNU AGPLv3 License](https://choosealicense.com/licenses/agpl-3.0/)
+  
   ## Contributing
-  ;aklsjdf;aklsjdf;aklsjdf
+  als;kdjf;alskdjfa;sdlkjf
 
   ## Tests
-  npm Test
+  ;alsdkjf;alskdjfa;sdlkfj
 
   ## Questions
-  jcorum11
-  jacob.w.corum@gmail.com
+  a;sldkjfa;slkdjfjas;dlkjf
+  ;alskdjf;alskdjf;alsdkjf
