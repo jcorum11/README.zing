@@ -1,14 +1,28 @@
 {
-  "name": "static-site",
+  "name": "readme-zing",
   "version": "1.0.0",
-  "description": "",
+  "description": "A program to generate professional README.md files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm test"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcorum11/README.zing.git"
+  },
+  "keywords": [
+    "README",
+    "professional",
+    "readme.md",
+    "generator"
+  ],
+  "author": "Jake Corum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcorum11/README.zing/issues"
+  },
+  "homepage": "https://github.com/jcorum11/README.zing#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^7.2.0"
   }
 }

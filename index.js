@@ -6,7 +6,7 @@ const { resolve } = require("path");
 // function to write README file
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile("./dist/index.html", fileContent, err => {
+        fs.writeFile("./dist/README.md", fileContent, err => {
             if (err) {
                 reject(err);
                 return;
@@ -19,12 +19,12 @@ const writeFile = fileContent => {
     })
 }
 
-const generateTitle = readmeData => readmeData.title
+const generateTitle = readmeData => `# ${readmeData.title}`
 
 // function to start program
 const init = () => {
     // array of questions for user
-    inquirer.prompt([
+    return inquirer.prompt([
         {
             type: "input",
             name: "title",
