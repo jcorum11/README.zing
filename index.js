@@ -2,6 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const { rejects } = require("assert");
 const { resolve } = require("path");
+const generateMarkdown = require("./Develop/utils/generateMarkdown.js")
 
 // function to write README file
 const writeFile = fileContent => {
@@ -19,8 +20,6 @@ const writeFile = fileContent => {
     })
 }
 
-const generateTitle = readmeData => `# ${readmeData.title}`
-
 // function to start program
 const init = () => {
     // array of questions for user
@@ -35,7 +34,7 @@ const init = () => {
 
 //function call to initialize program
 init()
-    .then(readmeData => generateTitle(readmeData))
+    .then(readmeData => generateMarkdown(readmeData))
     .then(pageMd => writeFile(pageMd))
 
 
