@@ -26,7 +26,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.githubProfileLInk}
+  ${data.githubProfileLink}
   ${data.emailLink}
 `;
 }

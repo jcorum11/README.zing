@@ -70,12 +70,12 @@ const init = () => {
         {
             type: "input",
             name: "githubProfileLink",
-            message: "Enter Your GitHub Profile Link"
+            message: "Enter Your GitHub Profile Link:"
         },
         {
             type: "input", 
             name: "emailLink",
-            message: "Enter Your Email"
+            message: "Enter Your Email:"
         }, 
     ])
 }
