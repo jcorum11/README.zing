@@ -33,8 +33,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.githubProfileLink}
-  ${data.emailLink}
+  [GitHub Profile](${data.githubProfileLink})
+  [Email](${data.emailLink})
 `;
 };
 
