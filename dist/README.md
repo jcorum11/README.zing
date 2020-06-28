@@ -1,7 +1,7 @@
 
-  # ;alksdjf;alkjsdf;lkasdf;l
+  # README.zing
 
-  ![License](https://img.shields.io/badge/license-GNU_AGPLv3-green)
+  ![License](https://img.shields.io/badge/license-MIT-green)
 
   ## Description
 
@@ -12,23 +12,22 @@
   * [License](#license)
 
   ## Installation
-  ;lkajsdf;lkajsdf;lkajsdf;lk
+  download all file and run node index.js
 
   ## Usage
-  a;lskdjf;alskjdf;alskdjf
+  lkjas;dlkfja;lskjdf
 
   ## License
-  [GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
+  [MIT License](https://choosealicense.com/licenses/mit/)
   ### Description
-  >Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
+  >A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
   ## Contributing
-  a;sdkfja;sldkjfa;lskdfj
+  pull request
 
   ## Tests
-  a;sdkljfa;sldkf;asldkjf;lkjsdf
+  npm test
 
   ## Questions
-  [GitHub Profile](a;lksdjf;alskdjf;alksdj)
-  
-  [Email](as;dfkj;aksjdf;alksjdf;lkas)
+  [GitHub Profile](https://github.com/jcorum11)
+  [Email](jacob.w.corum@gmail.com)
