@@ -12,24 +12,22 @@
   * [License](#license)
 
   ## Installation
-  download all file and run node index.js
+  A fork request
 
   ## Usage
-  lkjas;dlkfja;lskjdf
+  node index.js
 
   ## License
   [MIT License](https://choosealicense.com/licenses/mit/)
-  
   ### Description
   >A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
   ## Contributing
-  pull request
+  A pull request
 
   ## Tests
   npm test
 
   ## Questions
   [GitHub Profile](https://github.com/jcorum11)
-
   [Email](jacob.w.corum@gmail.com)
