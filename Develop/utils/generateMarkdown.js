@@ -1,7 +1,11 @@
 // function to generate markdown for README
+const licenseSelector = require("./licenseSelector.js")
 function generateMarkdown(data) {
+  licenseSelection = licenseSelector(data.license)
   return `
   # ${data.title}
+
+  [![License](https://img.shields.io/badge/license-${licenseSelection.name}-green)]
 
   ## Description
 
@@ -18,7 +22,10 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${data.mitLicense ? "MIT" : data.license}
+  ${licenseSelection.link}
+  ### Description
+  >${licenseSelection.description}
+
   ## Contributing
   ${data.contributing}
 
@@ -29,6 +36,6 @@ function generateMarkdown(data) {
   ${data.githubProfileLink}
   ${data.emailLink}
 `;
-}
+};
 
 module.exports = generateMarkdown;
