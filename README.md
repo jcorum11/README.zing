@@ -15,7 +15,7 @@
   A fork request
 
   ## Usage
-  node index.js
+  node index.ts
 
   ## License
   [MIT License](https://choosealicense.com/licenses/mit/)
