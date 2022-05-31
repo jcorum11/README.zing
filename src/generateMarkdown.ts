@@ -1,6 +1,8 @@
+import { Answers } from "..";
+import { licenseSelector } from '../src/licenseSelector'
+
 // function to generate markdown for README
-const licenseSelector = require('./licenseSelector.js')
-function generateMarkdown(data) {
+export function generateMarkdown(data: Answers) {
   const licenseSelection = licenseSelector(data.license)
   return `
   # ${data.title}
@@ -39,4 +41,3 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;

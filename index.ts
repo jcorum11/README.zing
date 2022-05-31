@@ -1,11 +1,23 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
-const generateMarkdown = require('./src/generateMarkdown.js')
+const generateMarkdown = require('./src/generateMarkdown')
+
+export type Answers = { 
+	title: string
+	description: string
+	installation: string
+	usage: string
+	license: string
+	contributing: string
+	tests: string
+	githubProfileLink: string
+	emailLink: string
+} 
 
 // function to write README file
-const writeFile = fileContent => {
+const writeFile = ( fileContent: string ) => {
   return new Promise((resolve, reject) => {
-    fs.writeFile('./dist/README.md', fileContent, err => {
+    fs.writeFile('./dist/README.md', fileContent, ( err: Error ) => {
       if (err) {
         reject(err)
         return
@@ -84,7 +96,6 @@ const init = () => {
 
 //function call to initialize program
 init()
-  .then(readmeData => generateMarkdown(readmeData))
-  .then(pageMd => writeFile(pageMd))
-
+  .then(( answers: Answers ) => generateMarkdown(answers)) 
+  .then(( pageMd: string ) =>  writeFile(pageMd))
 
